@@ -1,0 +1,13 @@
+Priority,Area,Task,Definition of done
+P0,Platform,Create one Google Sheet as source of truth,"Workbook logic is operating in Sheets, not only xlsx"
+P0,Controls,Add Change_Log and Validation tabs,Both tabs exist and are populated
+P1,Projection,Generate Projection_Events from structured source tables,No critical future row is hand-maintained only
+P1,Cashflow,Add 7/14/30-day runway block,Dashboards show min balance and next shortfall date
+P2,Funding,Parameterize Base/Cons/Opt assumptions,Scenario assumptions live in one assumptions table
+P3,Remodel,Create Remodel_Obligations table,All known obra obligations exist as rows with dates/status
+P4,Shared Economics,Make current imbalance transaction-reconcilable,Exact total is traceable to row groups
+P5,Investments,Backfill application dates and net liquidation values,No live investment row is missing app date or IR rate
+P6,Ingestion,Build idempotent CSV importers,Repeat import does not duplicate rows
+P6,Rules,Write deterministic classification engine,"Each enriched row stores category, bucket, rule id, review flag"
+P7,Apps Script,Add custom Finance menu,Menu actions run and log changes
+P8,QA,Add validation warnings,Red-flag summary exists and catches key issues
