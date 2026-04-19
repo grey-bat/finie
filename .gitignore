@@ -2,6 +2,10 @@
 *.xlsx
 *.xls
 
+# Packed handoff artifacts — contain personal financial data
+*.zip
+finie_fresh_start_pack/
+
 # OS generated files
 .DS_Store
 .DS_Store?
